@@ -12,9 +12,11 @@ type Mutation {
   signup(data: UserCreateInput!): Auth
   login(email: String!, password: String!): Auth,
   createPost(data: InputCreatePost!) : Post,
-  updateUser(id: ID, data: UserUpdateInput) : User,
+  # updateUser(id: ID, data: UserUpdateInput) : User,
+  updateUser(id: ID, data: UserCreateInput) : User,
   deleteUser(id: ID) : String,
-  updatePost(id: ID, data: PostUpdateInput) : Post,
+  # updatePost(id: ID, data: PostUpdateInput) : Post,
+   updatePost(id: ID, data: InputCreatePost) : Post,
   deletePost(id: ID) : String,
 }
 
