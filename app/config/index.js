@@ -11,9 +11,10 @@ const ENVS = {
   production: {
     SECRET_KEY: process.env.SECRET_KEY,
     db: {
-      url: process.env.MONGO_URL,
+      url: process.env.MONGO_URL
     }
   },
 };
 
 module.exports  = ENVS[NODE_ENV];
+
