@@ -15,7 +15,7 @@ const mutationRegister = `
 describe("User signup works correctly",() => {
 
     beforeEach(async () => await setupTest());
-    //afterEach
+    
 
     // it("Should create user correctly", async () => {
     //     const data = {
